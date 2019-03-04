@@ -17,10 +17,11 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-    vertical-align: baseline;
 }
 img{
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 *, *:before, *:after {
     box-sizing: border-box;
@@ -29,9 +30,6 @@ img{
 a{
     text-decoration: none;
     color: black;
-    position: relative;
-    vertical-align: baseline;
-    margin: 0.2em;
 }
 a::after{
     content: '';
@@ -77,10 +75,11 @@ li{
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
-    vertical-align: baseline;
     width: 100%;
     position: fixed;
     font-size: 1.2em;
+    z-index: 1;
+    padding: 1em;
 }
 
 .nav-bar-ul{
@@ -90,11 +89,16 @@ li{
     
 }
 
+
 li{
-    margin: 5%;
-    padding:1%;
-    
+    width: 5em;
+    padding: 1em;
 }
+
+.nav-bar a{
+    position: relative;
+}
+
 #slogan{
     vertical-align: middle;
     color: white;
@@ -105,6 +109,14 @@ li{
 #logo{
     font-size: 2em;
     color:black;
+}
+
+#lang{
+    width:50%;
+    height: auto;
+    display: block;
+    padding: auto;
+    margin: 0;
 }
 
 /* Background */
